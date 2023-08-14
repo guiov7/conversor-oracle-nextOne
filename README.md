@@ -21,5 +21,3 @@ Aqui você encontrará o código com a solução para o desafio do conversor de 
 
 
 Badge Exclusiva do Desafio 🏆
-
-    <a href="https://www.linkedin.com/in/guiovany-da-luz-552256137/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
