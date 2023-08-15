@@ -35,8 +35,8 @@ public class Main {
                 break;
 
                 case "Conversor de Temperatura":
-                    
-
+                    JOptionPane.showMessageDialog(null, "Ainda estou implementando");
+                break;
             }
    
         }
