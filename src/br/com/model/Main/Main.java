@@ -34,6 +34,9 @@ public class Main {
                     }
                 break;
 
+                case "Conversor de Temperatura":
+                    
+
             }
    
         }
