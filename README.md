@@ -19,5 +19,13 @@ Aqui você encontrará o código com a solução para o desafio do conversor de 
 - O programa retornará seu valor atualizado na conversão.
 ---
 
-
 Badge Exclusiva do Desafio 🏆
+
+
+### Meu Linkedin 🚀
+<div>
+     <a href="https://www.linkedin.com/in/guiovany-da-luz-552256137/">
+     <img src="./src\br\com\model\lkdn.svg" style="width: 30px; height: 30px;">
+     Guiov7 
+     </a>
+</div>
