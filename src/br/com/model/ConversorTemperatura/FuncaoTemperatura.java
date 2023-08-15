@@ -1,5 +1,7 @@
 package src.br.com.model.ConversorTemperatura;
 
+import src.br.com.model.ConversorTemperatura.ConverteTemperatura;
+
 import javax.swing.*;
 
 public class FuncaoTemperatura {
@@ -10,7 +12,7 @@ public class FuncaoTemperatura {
         String opcao = (JOptionPane
         .showInputDialog(null, "Escolha sua opção de conversão", "Temperatura", JOptionPane.PLAIN_MESSAGE, null,
             new Object[] { 
-                "Graus Celsius a Fahrenheit", "Graus Celsiu a Kelvin",
+                "Graus Celsius a Fahrenheit", "Graus Celsius a Kelvin",
                 "Graus Fahrenheit a Celsius", "Kelvin a Graus Celsius",
                 "Kelvin a Graus Fahrenheit", },
             "Escolha")).toString();
@@ -20,7 +22,7 @@ public class FuncaoTemperatura {
             case "Graus Celsius a Fahrenheit":
                 temperatura.converterCelsiusParaFahrenheit(temperaturaRecebida);
                 break;
-            case "Graus Celsiu a Kelvin":
+            case "Graus Celsius a Kelvin":
                 temperatura.converterCelsiusParaKelvin(temperaturaRecebida);
                 break;
             case "Graus Fahrenheit a Celsius":

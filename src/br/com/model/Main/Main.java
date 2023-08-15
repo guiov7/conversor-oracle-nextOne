@@ -2,7 +2,8 @@ package src.br.com.model.Main;
 
 import src.br.com.model.ConversorMoedas.ConverteMoedas;
 import src.br.com.model.ConversorMoedas.Funcao;
-import src.br.com.model.ConversorTemperatura.ConversorTemperatura;
+import src.br.com.model.ConversorTemperatura.ConverteTemperatura;
+import src.br.com.model.ConversorTemperatura.FuncaoTemperatura;
 
 import javax.swing.*;
 
@@ -11,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
         
         Funcao moedas = new Funcao();
+        FuncaoTemperatura temperaturas = new FuncaoTemperatura();
 
         while (true) {
 
@@ -18,9 +20,9 @@ public class Main {
 
             switch (opcao) {
                 case "Conversor de Moeda":
-                    String input = JOptionPane.showInputDialog("Insira um valor: ");
-                    if (checar(input)) {
-                        double valorRecebido = Double.parseDouble(input);
+                    String coinInput = JOptionPane.showInputDialog("Insira um valor: ");
+                    if (checar(coinInput)) {
+                        double valorRecebido = Double.parseDouble(coinInput);
                         moedas.converterMoedas(valorRecebido);
 
                         int resposta = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
@@ -35,7 +37,20 @@ public class Main {
                 break;
 
                 case "Conversor de Temperatura":
-                    JOptionPane.showMessageDialog(null, "Ainda estou implementando");
+                    String tempInput = JOptionPane.showInputDialog("Insira a temperatura: ");
+                    if(checar(tempInput)) {
+                        double temperaturaRecebida = Double.parseDouble(tempInput);
+                        temperaturas.converterTemperatura(temperaturaRecebida);
+
+                        int resposta = JOptionPane.showConfirmDialog(null,"Deseja coontinuar?");
+                        if(JOptionPane.OK_OPTION == resposta) {
+                            System.out.println("Escolha opção afirmativa");
+                        }else{
+                            JOptionPane.showMessageDialog(null,"Programa finalizado");
+                        }
+                    }else{
+                        JOptionPane.showMessageDialog(null, "Valor inválido");
+                    }
                 break;
             }
    
